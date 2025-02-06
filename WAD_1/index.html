@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MyStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>MyStore</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Manage Products</a></li>
+                <li><a href="#">Manage Orders</a></li>
+                <li><a href="#">User Activity</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to the Admin Dashboard</h1>
+        </header>
+
+        <!-- Dashboard Stats -->
+        <section class="stats">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p>150</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>320</p>
+            </div>
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>500</p>
+            </div>
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p>$12,500</p>
+            </div>
+        </section>
+
+        <!-- Orders Table -->
+        <section class="orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#12345</td>
+                        <td>John Doe</td>
+                        <td>Shipped</td>
+                        <td>$99.99</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12346</td>
+                        <td>Jane Smith</td>
+                        <td>Processing</td>
+                        <td>$49.99</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#12347</td>
+                        <td>Tom Brown</td>
+                        <td>Delivered</td>
+                        <td>$120.00</td>
+                        <td><button>View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
