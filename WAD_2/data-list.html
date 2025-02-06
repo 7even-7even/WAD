@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Users</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>List of Registered Users</h2>
+    <ul id="user-list">
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+
+      const userList = document.getElementById("user-list");
+
+      if (users.length > 0) {
+        users.forEach(function (user) {
+          const listItem = document.createElement("li");
+          listItem.innerHTML = `<strong>${user.name}</strong> (${user.email})`;
+          userList.appendChild(listItem);
+        });
+      } else {
+        userList.innerHTML = "<li>No users registered yet.</li>";
+      }
+    });
+  </script>
+</body>
+</html>
