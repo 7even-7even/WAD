@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6432ab6c12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="res/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <h1 style="font-size: 60px; color: #ff004f; padding: 30px;">My Portfolio</h1>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Android Developer</p>
+                <h1>Hi, I'm <span>Siddharth</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="res/profile.png" alt="Profile Image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I am a 3rd-year Information Technology student with a strong enthusiasm for data structures and algorithms (DSA) and web technology...</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Android Development Training at I<sup>2</sup>IT</li>
+                            <li><span>2023 - 2024</span><br>Android Developer At Cognifyz Technologies</li>
+                            <li><span>2021 - 2022</span><br>12th standard</li>
+                            <li><span>2020 - 2021</span><br>10th Standard</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="services-list">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Android Development</h2>
+                    <p>Android Development is the process of planning, conceptualizing, and implementing the plan for designing a mobile application in a way that is functional and offers a good user experience.</p>
+                    <a href="https://www.simplilearn.com/what-is-web-designing-article#:~:text=Web%20designing%20is%20the%20process,make%20them%20easy%20to%20navigate." target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>In digital design, user interface (UI) refers to the interactivity, look, and feel of a product screen or web page, while user experience (UX) covers a user's overall experience with the product or website.</p>
+                    <a href="https://www.figma.com/resource-library/difference-between-ui-and-ux/#:~:text=In%20digital%20design%2C%20user%20interface,with%20the%20product%20or%20website." target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>UX design focuses on the user's experience with the app, such as how easy it is to use. Interaction design is about creating intuitive ways for users to interact with the application, making using the app feel more natural and less cumbersome.</p>
+                    <a href="https://appetiser.com.au/glossary/app-design/#:~:text=The%20focus%20of%20app%20design&text=UX%20design%20focuses%20on%20the,more%20natural%20and%20less%20cumbersome." target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="services-list">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="res/project.png" alt="Machine Learning Project">
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <p>The Iris dataset is one of the most well-known and commonly used datasets in the field of machine learning...</p>
+                        <a href="https://colab.research.google.com/drive/1MRLIUmXIUoQ23kB8ghNX76kDHMUafu0H#scrollTo=vXEggJoFGbI2" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="res/project.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>A Social Connectivity App</h3>
+                        <p>The app connects you with talented people around the world. Download it from the Play Store.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="res/project.png" alt="Twitter Clone">
+                    <div class="layer">
+                        <h3>X Clone</h3>
+                        <p>A Twitter clone is a simplified version of the popular social media platform, X.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sidxohal@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9049452112</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
