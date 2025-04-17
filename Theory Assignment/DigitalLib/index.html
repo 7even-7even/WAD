@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div data-role="page" id="home">
+  <div data-role="header"><h1>Digital Library</h1></div>
+  <div data-role="content">
+    <a href="#reader" class="ui-btn ui-btn-b">Start Reading</a>
+  </div>
+</div>
+
+<div data-role="page" id="reader">
+  <div data-role="header">
+    <h1>Book Reader</h1>
+  </div>
+  <div data-role="content">
+    <div id="book-content" style="font-size: 16px;"></div>
+    <div class="ui-grid-b">
+      <div class="ui-block-a"><button id="prevPage" class="ui-btn">Previous</button></div>
+      <div class="ui-block-b"><button id="bookmark" class="ui-btn">🔖 Bookmark</button></div>
+      <div class="ui-block-c"><button id="nextPage" class="ui-btn">Next</button></div>
+    </div>
+    <p id="page-indicator"></p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
